@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Form register-form">
+            <h2>Register</h2>
+
+            <form action="#" id="registerForm">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" id="registerName">
+                </div>
+
+                <div class="input-box">
+                    <input type="email" placeholder="Email" id="registerEmail">
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Phone Number" id="registerPhone">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="registerPassword">
+                </div>
+
+                <button class="btn" type="button" onclick="register()">Register</button>
+
+                <div class="forgot-section">
+                    <p>Already have an account? <a href="index.html"><span>Login</span></a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function register() {
+            const name = document.getElementById('registerName').value;
+            const email = document.getElementById('registerEmail').value;
+            const phone = document.getElementById('registerPhone').value;
+            const password = document.getElementById('registerPassword').value;
+            alert('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nPassword: ' + password);
+        }
+    </script>
+</body>
+</html>
