@@ -12,28 +12,30 @@
         <div class="Form login-form">
             <h2>Login</h2>
 
-            <form action="#">
+            <form action="#" id="loginForm">
                 <div class="input-box">
-                  
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email" id="loginEmail">
                 </div>
 
                 <div class="input-box">
-                  
-                    <input type="text" placeholder="Password">
-                    </div>
+                    <input type="password" placeholder="Password" id="loginPassword">
+                </div>
 
-                    <button class="btn">Login</button>
+                <button class="btn" type="button" onclick="login()">Login</button>
 
-                    <div class="forgot-section">
-                    <p>Forgot <span>Password</span>?</p>
-                     </div>
-                     <div class="forgot-section">
-                        <p>Do you have an account?<span>Sign up</span></p>
-                         </div>
-                
+                <div class="forgot-section">
+                    <p>Do you have an account? <a href="register.html"><span>Sign up</span></a></p>
+                </div>
             </form>
         </div>
     </div>
+
+    <script>
+        function login() {
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            alert('Email: ' + email + '\nPassword: ' + password);
+        }
+    </script>
 </body>
 </html>
